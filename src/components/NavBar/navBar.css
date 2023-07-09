@@ -9,6 +9,7 @@ body{
     background-color: #C2A897;
 }
 .navBar{
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;

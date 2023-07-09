@@ -4,7 +4,7 @@ function Logo(){
     return(
         <a href="#" className="logo">
             <GiFlexibleLamp className="logoLamp"></GiFlexibleLamp>
-            <span>Tu luz interna</span>
+            <span>Tu luz interior</span>
         </a>
         
         )
