@@ -5,9 +5,8 @@ import NavBar from './components/NavBar/navBar'
 import CartWidget from './components/CartWidget/cartWidget';
 import Logo from './components/Logo/logo';
 import './components/NavBar/navBar.css'
-import ContentHome from './components/PageContent/content';
-import IndividualIntervalsExample from './components/PageContent/content';
-import CarouselHome from './components/PageContent/content';
+import CarouselHome from './components/CarouselHome/content';
+import HomeContent from './components/HomeContent/homeContent';
 
 function App() {
   const [contadorCarrito] = useState(0)
@@ -21,12 +20,13 @@ function App() {
       <ul>
           <NavBar />
           <NavBar titulo='Productos' />
-          <NavBar titulo='Nosotros' />
+          <NavBar titulo='Catalogo' />
           <NavBar titulo='Contacto' />
           <CartWidget contador={contadorCarrito}></CartWidget>
       </ul>
     </nav>
     <CarouselHome />
+    <HomeContent />
   </>
   );
 }
