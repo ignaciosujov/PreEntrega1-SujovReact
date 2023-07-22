@@ -20,7 +20,7 @@ function HomeContent(){
                         <div className='cardContent'>
                             <h4>{product.name}</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, consequatur aliquam illo ducimus fugit distinctio!</p>
-                            <Link key={product.id} to={`/catalogo/${product.id}`}>Ver más</Link>
+                            <Link key={product.id} to={`/productos/item/${product.id}`}>Ver más</Link>
                         </div>
                     </div>
                 ))}

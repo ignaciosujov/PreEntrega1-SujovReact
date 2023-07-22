@@ -5,10 +5,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './components/NavBar/navBar.css'
 import NavBar from './components/NavBar/navBar'
 import Home from './components/home'
-import Products from './components/Catalog/catalog';
-import ProductDetail from './components/Catalog/productDetail';
+
 import './components/HomeContent/homeContent'
 import HomeContent from './components/HomeContent/homeContent';
+import ItemListContainer from './components/ItemListContainer/itemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/itemDetailContainer';
 
 function App() {
   const [contadorCarrito] = useState(0)
@@ -20,9 +21,9 @@ function App() {
     <NavBar />
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/productos" element={<HomeContent />} />
-      <Route exact path="/catalogo" element={<Products/>} />
-      <Route exact path="/catalogo/:id" element={<ProductDetail />} />
+      <Route exact path="/productos" element={<ItemListContainer/>} />
+      <Route exact path='/productos/category/:categoryId' element={<ItemListContainer/>} />
+      <Route exact path='/productos/item/:id' element={<ItemDetailContainer/>}></Route>
     </Routes>
   </BrowserRouter>
   );

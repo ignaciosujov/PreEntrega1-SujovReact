@@ -47,6 +47,30 @@ body{
     text-shadow: 0 0 3px #422719;
     transition: all 0.5s;
 }
+#basic-nav-dropdown{
+    font-size: 18px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+#basic-nav-dropdown:hover{
+    text-shadow: 0 0 3px #422719;
+    transition: all 0.5s;
+}
+#basic-nav-dropdown li{
+    margin: 10px 25px;
+    list-style-type: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 14px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#basic-nav-dropdown .active{
+    text-shadow: none;
+
+}
+
+
 .active{
     text-shadow: 0 0 3px #422719;
 }

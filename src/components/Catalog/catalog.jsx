@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 
-const PRODUCTS = [{id: 1, name: "lamapara1"}, {id: 2, name: "lampara2"}, {id: 3, name: "lampara3"}]
+const PRODUCTS = [{id: '1', name: "lamapara1", stock: 10, price: 6000, description: 'lorem asdkijshsduiondsanchjosaes uina'}, {id: '2', name: "lampara2", stock: 10, price: 6000, description: 'lorem asdkijshsduiondsanchjosaes uina'}, {id: '3', name: "lampara3", stock: 10, price: 6000, description: 'lorem asdkijshsduiondsanchjosaes uina'}]
 
 
 function Products(){
